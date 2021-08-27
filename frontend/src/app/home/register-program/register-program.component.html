@@ -4,6 +4,15 @@
       <mat-card-title>Register Program</mat-card-title>
       <mat-card-content>
         <div class="container">
+
+          <mat-form-field>
+            <input
+              [(ngModel)]="registerData.id"
+              matInput
+              placeholder=" Program's Id "
+              required
+            />
+          </mat-form-field>
           <mat-form-field>
             <input
               [(ngModel)]="registerData.name"
@@ -24,7 +33,7 @@
 
           <mat-form-field>
             <input
-              [(ngModel)]="registerData.idTeacher"
+              [(ngModel)]="registerData.teacherId"
               matInput
               placeholder="Teacher in charge"
               required

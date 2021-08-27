@@ -19,7 +19,12 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
+
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { TeacherService } from './services/teacher.service';
+import { StudentService } from './services/student.service';
+import { ProgramService } from './services/program.service';
+import { CourseService } from './services/course.service';
 
 @NgModule({
   declarations: [
@@ -45,7 +50,12 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     MatButtonModule,
     MatSnackBarModule,
   ],
-  providers: [],
+  providers: [
+    TeacherService,
+    StudentService,
+    ProgramService,
+    CourseService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
